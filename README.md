@@ -39,7 +39,6 @@ The app is developed using **Android Studio**, primarily with **Kotlin**, and a 
 ## 📩 Contact Us
 
 If you have any questions or suggestions, feel free to reach out to us via:
-   ```bash
 - Email: laifaachraf08@gmail.com
 
 ## Preview
