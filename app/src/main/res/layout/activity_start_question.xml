@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_test"
+    tools:context=".StartQuestion">
+
+    <TextView
+        android:id="@+id/timeMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/truno"
+        android:gravity="center"
+        android:text="Time's Up!"
+        android:textColor="#F44336"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans4Btn" />
+
+    <TextView
+        android:id="@+id/subjectTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/truno"
+        android:gravity="center|center_vertical"
+        android:text="The Neolithic Revolution marked the transition from nomadic hunting and gathering to settled agriculture. In which region did this transformation first occur?"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/NextPlayerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="Achraf"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/NextBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/NextBtn"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/single_player"
+        android:fontFamily="@font/baloo"
+        android:onClick="Next"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/ans1Btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/answer_style"
+        android:fontFamily="@font/truno"
+        android:onClick="Answer"
+        android:text="Filtering waste from blood"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectTxt" />
+
+    <android.widget.Button
+        android:id="@+id/ans2Btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/answer_style"
+        android:fontFamily="@font/truno"
+        android:onClick="Answer"
+        android:text="Florence Griffith-Joyner"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans1Btn" />
+
+    <android.widget.Button
+        android:id="@+id/ans3Btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/answer_style"
+        android:fontFamily="@font/truno"
+        android:onClick="Answer"
+        android:text="Florence Griffith-Joyner"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans2Btn" />
+
+    <android.widget.Button
+        android:id="@+id/ans4Btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/answer_style"
+        android:fontFamily="@font/truno"
+        android:onClick="Answer"
+        android:text="Florence Griffith-Joyner"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans3Btn" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:max="1000"
+        android:progress="1000"
+        android:progressDrawable="@drawable/progress_style"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlayerTxt" />
+
+    <TextView
+        android:id="@+id/PlayerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/baloo"
+        android:text="Achraf"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

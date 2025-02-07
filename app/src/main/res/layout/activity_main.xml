@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_test"
+    tools:context=".MainActivity">
+
+    <android.widget.Button
+        android:id="@+id/single_player_btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/single_player"
+        android:fontFamily="@font/baloo"
+        android:onClick="SinglePlayer"
+        android:text="Single Player"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <android.widget.Button
+        android:id="@+id/multi_player_btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/multi_player"
+        android:fontFamily="@font/baloo"
+        android:onClick="MultiPlayer"
+        android:text="Multiplayer"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/single_player_btn" />
+
+    <android.widget.Button
+        android:id="@+id/get_vpn_btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/vpn_player"
+        android:fontFamily="@font/baloo"
+        android:onClick="Premium"
+        android:text="Go Premium"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multi_player_btn" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_img" />
+
+    <ImageButton
+        android:id="@+id/music_btn"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle"
+        android:onClick="Music"
+        android:src="@drawable/volume_vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/star_btn"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/circle"
+        android:onClick="Rate"
+        android:src="@drawable/star_vectore"
+        app:layout_constraintBottom_toTopOf="@+id/share_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/share_btn"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/circle"
+        android:onClick="Share"
+        android:src="@drawable/share_vectore"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-4393553200223427/7139275339"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

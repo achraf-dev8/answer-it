@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_test"
+    tools:context=".AddPlayers">
+
+    <LinearLayout
+        android:id="@+id/linearLayout66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/baloo"
+            android:text="Add player"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <android.widget.Button
+            android:id="@+id/plus_6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/baloo"
+            android:onClick="plus"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/baloo"
+            android:text="Add player"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <android.widget.Button
+            android:id="@+id/plus_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/baloo"
+            android:onClick="plus"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/baloo"
+            android:text="Add player"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <android.widget.Button
+            android:id="@+id/plus_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/baloo"
+            android:onClick="plus"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/baloo"
+            android:text="Add player"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <android.widget.Button
+            android:id="@+id/plus_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/baloo"
+            android:onClick="plus"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/baloo"
+        android:text="Add players to play"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/single_player_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/single_player"
+        android:fontFamily="@font/baloo"
+        android:onClick="Start"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/single_player_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/baloo"
+            android:text="Mode:"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp" />
+
+        <android.widget.Button
+            android:id="@+id/modeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/multi_player"
+            android:fontFamily="@font/baloo"
+            android:onClick="Mode"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Race"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/settingsImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:onClick="settings"
+            android:visibility="visible"
+            app:srcCompat="@drawable/settings_vectore" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <EditText
+            android:id="@+id/Player6"
+            android:layout_width="235dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custtom_input"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:hint="Player 6"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#99595959"
+            android:textSize="16sp" />
+
+        <android.widget.Button
+            android:id="@+id/minus_6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/baloo"
+            android:onClick="minus"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <EditText
+            android:id="@+id/Player5"
+            android:layout_width="235dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custtom_input"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:hint="Player 5"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#99595959"
+            android:textSize="16sp" />
+
+        <android.widget.Button
+            android:id="@+id/minus_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/baloo"
+            android:onClick="minus"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <EditText
+            android:id="@+id/Player4"
+            android:layout_width="235dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custtom_input"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:hint="Player 4"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#99595959"
+            android:textSize="16sp" />
+
+        <android.widget.Button
+            android:id="@+id/minus_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/baloo"
+            android:onClick="minus"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <EditText
+            android:id="@+id/Player3"
+            android:layout_width="235dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custtom_input"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:hint="Player 3"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#99595959"
+            android:textSize="16sp" />
+
+        <android.widget.Button
+            android:id="@+id/minus_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/baloo"
+            android:onClick="minus"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <EditText
+            android:id="@+id/Player1"
+            android:layout_width="235dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custtom_input"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:hint="Player 1"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#99595959"
+            android:textSize="16sp" />
+
+        <android.widget.Button
+            android:id="@+id/minus_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/baloo"
+            android:onClick="minus"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <EditText
+            android:id="@+id/Player2"
+            android:layout_width="235dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/custtom_input"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:hint="Player 2"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#99595959"
+            android:textSize="16sp" />
+
+        <android.widget.Button
+            android:id="@+id/minus_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:fontFamily="@font/baloo"
+            android:onClick="minus"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
